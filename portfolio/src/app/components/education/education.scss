@@ -1,0 +1,141 @@
+.education-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.education-card {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+
+  .edu-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--accent);
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+}
+
+.edu-content {
+  flex: 1;
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .edu-institution {
+      font-size: 15px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+  }
+
+  .edu-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .edu-duration {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      i { margin-right: 4px; }
+    }
+
+    .current-badge {
+      padding: 4px 12px;
+      background: rgba(39, 201, 63, 0.15);
+      color: #27c93f;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .edu-location {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    i { color: var(--accent); margin-right: 6px; }
+  }
+
+  .edu-gpa {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    i { color: var(--accent); margin-right: 6px; }
+    strong { color: var(--accent); }
+  }
+}
+
+.edu-achievements {
+  .achievements-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .achievement-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .achievement-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: rgba(8, 145, 178, 0.1);
+    border: 1px solid rgba(8, 145, 178, 0.2);
+    border-radius: 20px;
+    font-size: 13px;
+    color: #22d3ee;
+    transition: var(--transition);
+
+    i { font-size: 11px; }
+
+    &:hover {
+      background: rgba(8, 145, 178, 0.2);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .education-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .edu-content .edu-header { flex-direction: column; align-items: center; }
+  .edu-content .edu-meta { justify-content: center; }
+  .edu-achievements .achievement-tags { justify-content: center; }
+}

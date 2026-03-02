@@ -1,0 +1,27 @@
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">My Skills</span>
+      <h2 class="section-title">Technologies I Work With</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      @for (category of categories; track category.name) {
+        <div class="skill-card glass-card" data-aos="fade-up" [attr.data-aos-delay]="$index * 100">
+          <div class="card-header">
+            <div class="card-icon">
+              <i [class]="category.icon"></i>
+            </div>
+            <h3>{{ category.name }}</h3>
+          </div>
+          <ul class="card-skills">
+            @for (skill of category.skills; track skill) {
+              <li class="skill-item">{{ skill }}</li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>
