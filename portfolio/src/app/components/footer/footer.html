@@ -2,7 +2,7 @@
   <div class="container">
     <div class="footer-content">
       <div class="footer-brand">
-        <a href="#home" class="footer-logo">
+        <a href="#home" class="footer-logo" (click)="scrollTo('home', $event)">
           <span class="logo-bracket">&lt;</span>
           <span class="logo-name">Hamza</span>
           <span class="logo-bracket">/&gt;</span>
@@ -11,10 +11,10 @@
       </div>
 
       <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" (click)="scrollTo('home', $event)">Home</a>
+        <a href="#about" (click)="scrollTo('about', $event)">About</a>
+        <a href="#projects" (click)="scrollTo('projects', $event)">Projects</a>
+        <a href="#contact" (click)="scrollTo('contact', $event)">Contact</a>
       </div>
 
       <div class="footer-socials">

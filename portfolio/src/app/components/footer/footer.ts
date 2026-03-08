@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   currentYear = new Date().getFullYear();
+
+  scrollTo(sectionId: string, event: Event): void {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, '', `#${sectionId}`);
+  }
 }

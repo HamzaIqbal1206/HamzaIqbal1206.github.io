@@ -18,27 +18,27 @@ export class SkillsComponent {
     {
       name: 'Languages',
       icon: 'fas fa-code',
-      skills: ['TypeScript', 'JavaScript', 'C++', 'Python', 'Java', 'SQL', 'Assembly'],
+      skills: ['TypeScript', 'JavaScript', 'Python', 'C++', 'SQL', '8086 Assembly'],
     },
     {
       name: 'Frontend',
       icon: 'fas fa-palette',
-      skills: ['Angular', 'React', 'HTML/CSS', 'Tailwind CSS', 'Bootstrap', 'SCSS'],
+      skills: ['Angular 21', 'Angular 18', 'React 18', 'Angular Material', 'Tailwind CSS 3', 'SCSS', 'Chart.js'],
     },
     {
       name: 'Backend',
       icon: 'fas fa-server',
-      skills: ['Node.js', 'Express', 'MSSQL', 'MySQL'],
+      skills: ['Node.js', 'Express', 'FastAPI', 'Socket.IO', 'Nodemailer', 'Google APIs'],
     },
     {
       name: 'AI/ML',
       icon: 'fas fa-brain',
-      skills: ['PyTorch', 'Whisper', 'WhisperX', 'Pyannote', 'FasterWhisper'],
+      skills: ['PyTorch', 'Hugging Face Transformers', 'scikit-learn', 'XGBoost', 'WhisperX', 'Faster-Whisper', 'pyannote', 'LangChain', 'Gemini'],
     },
     {
-      name: 'Tools & DevOps',
+      name: 'Databases & Tools',
       icon: 'fas fa-tools',
-      skills: ['Git', 'Docker', 'Jira', 'Qt Framework', 'SFML'],
+      skills: ['MS SQL Server', 'SSMS', 'Docker Compose', 'Vite', 'Git', 'Qt Framework', 'SFML', 'NASM', 'DOSBox'],
     },
     {
       name: 'Soft Skills',

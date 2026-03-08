@@ -13,26 +13,22 @@
           [class.featured]="project.featured"
           data-aos="fade-up"
           [attr.data-aos-delay]="$index * 100"
+          (click)="openReadme(project)"
         >
-          <div class="project-image">
-            <div class="project-placeholder">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="project-overlay">
-              <div class="project-links">
-                <a [href]="project.github" target="_blank" rel="noopener" class="project-link">
-                  <i class="fab fa-github"></i>
-                </a>
-                @if (project.demo) {
-                  <a [href]="project.demo" target="_blank" rel="noopener" class="project-link">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                }
-              </div>
-            </div>
-          </div>
-
           <div class="project-content">
+            <div class="project-actions">
+              <a
+                [href]="project.github"
+                target="_blank"
+                rel="noopener"
+                class="project-github-btn"
+                (click)="$event.stopPropagation()"
+                aria-label="Open GitHub repository"
+              >
+                <i class="fab fa-github"></i>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
             <div class="project-meta">
               @if (project.featured) {
                 <span class="featured-badge">Featured</span>
@@ -52,3 +48,15 @@
     </div>
   </div>
 </section>
+
+@if (selectedProject) {
+  <div class="readme-modal-backdrop" (click)="closeReadme()">
+    <div class="readme-modal glass-card" (click)="$event.stopPropagation()">
+      <div class="readme-modal-header">
+        <h3>{{ selectedProject.name }} - README Details</h3>
+        <button type="button" class="readme-close" (click)="closeReadme()">Close</button>
+      </div>
+      <pre class="readme-content">{{ getReadmeDetails(selectedProject) }}</pre>
+    </div>
+  </div>
+}

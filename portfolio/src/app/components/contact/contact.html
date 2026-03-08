@@ -42,34 +42,25 @@
         </div>
       </div>
 
-      <form class="contact-form glass-card" data-aos="fade-left" data-aos-delay="300" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" [(ngModel)]="formData.name" name="name" placeholder="Your Name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" [(ngModel)]="formData.email" name="email" placeholder="your@email.com" required />
-        </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" [(ngModel)]="formData.subject" name="subject" placeholder="What's this about?" />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" [(ngModel)]="formData.message" name="message" rows="5" placeholder="Your message..." required></textarea>
+      <div class="contact-panel glass-card" data-aos="fade-left" data-aos-delay="300">
+        <h3>Open to Opportunities</h3>
+        <p>
+          Available for internships, junior software roles, and collaborative
+          projects in full-stack development and AI-powered applications.
+        </p>
+
+        <div class="panel-points">
+          <div class="panel-point"><i class="fas fa-check-circle"></i> Preferred Role: Full-Stack / Frontend</div>
+          <div class="panel-point"><i class="fas fa-check-circle"></i> Location: Lahore (Remote-Friendly)</div>
+          <div class="panel-point"><i class="fas fa-check-circle"></i> Response Time: Within 24 Hours</div>
         </div>
 
-        <button type="submit" class="btn-primary submit-btn" [disabled]="sending()">
-          @if (sending()) {
-            <i class="fas fa-spinner fa-spin"></i> Sending...
-          } @else if (sent()) {
-            <i class="fas fa-check"></i> Message Sent!
-          } @else {
-            Send Message <i class="fas fa-paper-plane"></i>
-          }
-        </button>
-      </form>
+        <div class="panel-actions">
+          <a href="mailto:hamzaiqbal1206@gmail.com" class="btn-primary">Email Me</a>
+          <a href="Resume.html?v=1" target="_blank" rel="noopener" class="btn-outline">View Resume</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="Hamza.jpg" />
+    <title>Mohammad Hamza Iqbal - Resume</title>
+    <style>
+      :root {
+        --sidebar: #0e4f6b;
+        --sidebar-2: #0b4158;
+        --main-text: #0f172a;
+        --muted: #475569;
+        --line: #dbe3ec;
+        --accent: #0e4f6b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #eef3f7;
+        color: var(--main-text);
+      }
+
+      .cv {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 10px auto;
+        background: #fff;
+        display: grid;
+        grid-template-columns: 34% 66%;
+        box-shadow: 0 8px 28px rgba(2, 18, 37, 0.18);
+      }
+
+      .left {
+        background: linear-gradient(180deg, var(--sidebar), var(--sidebar-2));
+        color: #f3f9ff;
+        padding: 22px 20px 24px;
+      }
+
+      .photo-wrap {
+        width: 114px;
+        height: 114px;
+        margin: 2px auto 14px;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.72);
+        overflow: hidden;
+      }
+
+      .photo-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 100%;
+      }
+
+      .left h2 {
+        margin: 16px 0 8px;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: #d5ecff;
+        border-bottom: 1px solid rgba(213, 236, 255, 0.35);
+        padding-bottom: 6px;
+      }
+
+      .left p,
+      .left li,
+      .left a {
+        font-size: 11.6px;
+        line-height: 1.5;
+        color: #eef7ff;
+        text-decoration: none;
+      }
+
+      .left ul {
+        list-style: none;
+        margin: 6px 0 0;
+        padding: 0;
+      }
+
+      .left li {
+        margin: 3px 0;
+      }
+
+      .right {
+        padding: 24px 26px 22px;
+      }
+
+      .name {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.04;
+        letter-spacing: 0.2px;
+      }
+
+      .role {
+        margin-top: 4px;
+        font-size: 13.5px;
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .section {
+        margin-top: 14px;
+      }
+
+      .section h3 {
+        margin: 0 0 7px;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--accent);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 5px;
+      }
+
+      .summary {
+        font-size: 12px;
+        line-height: 1.56;
+        margin: 0;
+      }
+
+      .entry {
+        margin-bottom: 9px;
+      }
+
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+        margin-bottom: 2px;
+      }
+
+      .entry-title {
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .entry-date {
+        font-size: 11px;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .entry-sub {
+        font-size: 11.3px;
+        color: var(--muted);
+        margin-bottom: 3px;
+      }
+
+      .entry ul {
+        margin: 0;
+        padding-left: 16px;
+      }
+
+      .entry li {
+        font-size: 11.2px;
+        line-height: 1.45;
+        margin: 2px 0;
+      }
+
+      .project-link {
+        color: var(--accent);
+        text-decoration: none;
+        font-size: 10.9px;
+      }
+
+      .download-resume-btn {
+        position: fixed;
+        left: 14px;
+        bottom: 14px;
+        border: 0;
+        background: #0e4f6b;
+        color: #fff;
+        border-radius: 8px;
+        padding: 9px 12px;
+        font-size: 12px;
+        cursor: pointer;
+        z-index: 9999;
+      }
+
+      @media print {
+        body {
+          margin: 0;
+          background: #fff;
+        }
+        .cv {
+          width: auto;
+          min-height: auto;
+          margin: 0;
+          box-shadow: none;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        .download-resume-btn {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="cv">
+      <aside class="left">
+        <div class="photo-wrap">
+          <img src="Hamza.jpg" alt="Mohammad Hamza Iqbal" />
+        </div>
+
+        <h2>Contact</h2>
+        <p>Lahore, Pakistan</p>
+        <p><a href="mailto:hamzaiqbal1206@gmail.com">hamzaiqbal1206@gmail.com</a></p>
+        <p>+92 335 4560466</p>
+        <p><a href="https://github.com/HamzaIqbal1206">github.com/HamzaIqbal1206</a></p>
+        <p><a href="https://www.linkedin.com/in/mohammad-hamza-iqbal-873354231/">linkedin.com/in/mohammad-hamza-iqbal-873354231</a></p>
+
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Languages:</strong> TypeScript, JavaScript, Python, C++, SQL, 8086 Assembly</li>
+          <li><strong>Frontend:</strong> Angular (18/21), React 18, Angular Material, Tailwind CSS, SCSS, Chart.js</li>
+          <li><strong>Backend:</strong> Node.js, Express, FastAPI, Socket.IO</li>
+          <li><strong>AI/ML:</strong> PyTorch, HF Transformers, scikit-learn, XGBoost, WhisperX, Faster-Whisper, pyannote, LangChain, Gemini</li>
+          <li><strong>Tools:</strong> MS SQL Server, SSMS, Docker Compose, Vite, Git, Qt, SFML, NASM, DOSBox</li>
+        </ul>
+
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Teamwork</li>
+          <li>Leadership</li>
+          <li>Time Management</li>
+          <li>Effective Communication</li>
+          <li>Critical Thinking</li>
+        </ul>
+      </aside>
+
+      <section class="right">
+        <h1 class="name">Mohammad Hamza Iqbal</h1>
+        <div class="role">Software Developer | Computer Science Undergraduate</div>
+
+        <div class="section">
+          <h3>Profile</h3>
+          <p class="summary">
+            Motivated Computer Science undergraduate focused on full-stack development and applied AI/ML systems. Experienced in building modern web applications, collaborative tools, and research-driven ML projects across frontend, backend, and model pipelines.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3>Experience</h3>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">Software Engineering Intern - Tech Company</div>
+              <div class="entry-date">Oct 2025 - Present</div>
+            </div>
+            <ul>
+              <li>Built Angular features and production-ready frontend modules.</li>
+              <li>Applied AI/ML approaches to practical business problems.</li>
+              <li>Collaborated with cross-functional teams in Agile workflows.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">Teacher's Assistant - FAST NUCES</div>
+              <div class="entry-date">Jan 2026 - Present</div>
+            </div>
+            <ul>
+              <li>Guided students in labs, debugging, and core programming concepts.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">Deputy, AI Hackathon - Softec, FAST NUCES</div>
+              <div class="entry-date">Present</div>
+            </div>
+            <ul>
+              <li>Coordinated participants, judges, logistics, and event delivery.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="section">
+          <h3>Education</h3>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">BS Computer Science - FAST NUCES, Lahore</div>
+              <div class="entry-date">Aug 2023 - Present</div>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">FSc Pre-Medical - Punjab Group of Colleges</div>
+              <div class="entry-date">Oct 2020 - Jun 2022</div>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">Matriculation - Divisional Public School Model Town</div>
+              <div class="entry-date">Apr 2008 - Mar 2020</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section">
+          <h3>Selected Projects</h3>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">ShieldX Antivirus</div>
+              <div class="entry-date">Mar 2026</div>
+            </div>
+            <div class="entry-sub">React + Vite product website with animated marketing routes.</div>
+            <a class="project-link" href="https://github.com/HamzaIqbal1206/ShieldX">github.com/HamzaIqbal1206/ShieldX</a>
+          </article>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">FlexPlus | Diarization</div>
+              <div class="entry-date">Feb 2026</div>
+            </div>
+            <div class="entry-sub">Angular frontend prototype and FastAPI diarization workspace with WhisperX/Faster-Whisper pipelines.</div>
+          </article>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">Emotion Classification Study | Clarity | CourseMate</div>
+              <div class="entry-date">2025</div>
+            </div>
+            <div class="entry-sub">Comparative NLP benchmarking, collaborative productivity app, and full-stack course registration system.</div>
+          </article>
+          <article class="entry">
+            <div class="entry-head">
+              <div class="entry-title">Flappy Bird 8086 | Music Player | Dots and Boxes</div>
+              <div class="entry-date">2023-2024</div>
+            </div>
+            <div class="entry-sub">Systems/game projects using 8086 Assembly, Qt, and SFML.</div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <button class="download-resume-btn" type="button" onclick="window.print()">Download Resume (PDF)</button>
+  </body>
+</html>

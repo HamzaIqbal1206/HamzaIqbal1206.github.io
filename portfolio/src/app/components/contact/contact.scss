@@ -2,10 +2,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .contact-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
   h3 {
     font-size: 28px;
     font-weight: 700;
@@ -102,62 +106,51 @@
   }
 }
 
-.contact-form {
-  padding: 32px;
+.contact-panel {
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 
-  .form-group {
-    margin-bottom: 20px;
-
-    label {
-      display: block;
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-secondary);
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 14px 16px;
-      background: rgba(15, 26, 54, 0.4);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--radius-sm);
-      color: var(--text-primary);
-      font-size: 14px;
-      font-family: 'Inter', sans-serif;
-      transition: var(--transition);
-      outline: none;
-
-      &::placeholder {
-        color: var(--text-muted);
-      }
-
-      &:focus {
-        border-color: var(--accent);
-        box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
-        background: rgba(0, 212, 255, 0.02);
-      }
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
+  h3 {
+    margin: 0 0 12px;
+    font-size: 24px;
+    color: var(--text-primary);
   }
 
-  .submit-btn {
-    width: 100%;
-    justify-content: center;
-    padding: 16px;
-    font-size: 16px;
-
-    &:disabled {
-      opacity: 0.7;
-      cursor: not-allowed;
-    }
+  > p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.75;
   }
+}
+
+.panel-points {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.panel-point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+
+  i {
+    color: var(--accent);
+  }
+}
+
+.panel-actions {
+  margin-top: auto;
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 @media (max-width: 768px) {

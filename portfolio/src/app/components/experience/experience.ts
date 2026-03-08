@@ -24,7 +24,7 @@ export class ExperienceComponent {
     {
       title: "Teacher's Assistant",
       company: 'FAST NUCES',
-      duration: '2024',
+      duration: 'Jan 2026 - Present',
       description: [
         'Assisted professors in conducting lab sessions and tutorials',
         'Helped students debug code and understand complex concepts',
@@ -35,7 +35,7 @@ export class ExperienceComponent {
     {
       title: 'Deputy - AI Hackathon',
       company: 'Softec, FAST NUCES',
-      duration: '2024',
+      duration: 'Present',
       description: [
         'Organized and managed the AI Hackathon event at Softec',
         'Coordinated between participants, judges, and sponsors',
